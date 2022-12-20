@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Guest\ComicsController as ComicsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,18 +12,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::resource('comics', ComicsController::class);
 
 Route::get('/', function () {
     return view('home');
 })->name('home');
+
 Route::get('/characters', function () {
     return view('characters');  
 })->name('characters');
 
-Route::get('/comics', function () {
-    $comics = config('comics');
-    return view('comics',compact('comics')); 
-})->name('comics');
 
 Route::get('/collectibles', function () {
     return view('collectibles');  

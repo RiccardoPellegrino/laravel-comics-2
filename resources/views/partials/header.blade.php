@@ -21,7 +21,7 @@
                   </a> 
               </li>
               <li>
-                 <a class=" {{Route::currentRouteName() == 'comics' ? 'active' : ''}}" href="{{route('comics')}}">
+                 <a class=" {{Route::currentRouteName() == 'comics' ? 'active' : ''}}" href="{{route('comics.index')}}">
                       Comics
                   </a> 
               </li>
