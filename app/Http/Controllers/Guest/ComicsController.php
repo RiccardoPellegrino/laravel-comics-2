@@ -46,6 +46,8 @@ class ComicsController extends Controller
             $newcomic->series = $formData['series'];
             $newcomic->sale_date = $formData['sale_date'];
             $newcomic->type = $formData['type'];
+            $newcomic->writers = $formData['writers'];
+            $newcomic->artists = $formData['artists'];
             $newcomic->save();
         return redirect()->route('comics.show', ['comic' => $newcomic->id]);
     }

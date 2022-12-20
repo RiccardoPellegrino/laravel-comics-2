@@ -6,7 +6,7 @@
           <li><a href="{{route('comics.show', $comic->id)}}">{{$comic->title}}</a></li>
         @endforeach
     </ul>
-    <a href="">Create comic</a>
+    <a href="{{route('comics.create')}}">Create comic</a>
     {{-- <div class="pt-5">
       <div class="mio_container">
       @foreach ($comics as $comic)
