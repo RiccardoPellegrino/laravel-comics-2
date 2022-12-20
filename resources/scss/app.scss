@@ -1,1 +1,86 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+a {
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+a.active {
+    font-weight: bold;
+    color: blue;
+}
+
+li {
+    list-style: none;
+    margin: 0, 5px;
+}
+
+footer {
+    height: 100px;
+    background-color: gray;
+}
+
+.jumbo {
+    background-image: url('../img/jumbotron.jpg');
+    height: 400px;
+}
+
+main {
+    background-color: rgba(28, 28, 28);
+}
+
+.card{
+    border: none;
+    width: calc((100% - 60px) / 6);
+    margin: 5px;
+   img{
+    height: 200px;
+   }
+}
+.card-body{
+    background-color: rgba(28, 28, 28);
+}
+.mio_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 70%;
+}
+.btn-primary{
+    padding: 0px 40px;
+    font-size: larger;
+}
+.bottom-footer {
+    background-color: gray;
+
+    div.container {
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+        background-color: transparent;
+        border: 2px solid $blue;
+        color: white;
+        text-transform: uppercase;
+        padding: 15px;
+        }
+            span {
+            text-transform: uppercase;
+            color: $blue;
+            font-weight: bold;
+            padding-right: 20px;
+            }
+            a {padding-right: 0.8rem; 
+                img {
+                    width:30px;
+                    cursor: pointer;
+
+                    &:hover{
+                        filter: brightness(0) invert(1);
+                    }
+                }   
+            
+        }
+    }
+    
+}
