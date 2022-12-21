@@ -7,7 +7,7 @@
         @endforeach
     </ul>
     <a href="{{route('comics.create')}}">Create comic</a>
-    {{-- <div class="pt-5">
+    <div class="pt-5">
       <div class="mio_container">
       @foreach ($comics as $comic)
       
@@ -22,6 +22,6 @@
       </div>
       <div class="d-flex justify-content-center pb-3">
       <button class="btn btn-primary">LOAD MORE</button>
-      </div> --}}
+      </div>
   </section>
   @endsection
