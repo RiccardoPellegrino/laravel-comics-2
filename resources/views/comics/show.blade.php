@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <section class="text-white p-5">
+    <section class="text-white p-5 text-center">
         <h1>{{$comic->title}}</h1>
         <p>{{$comic->description}}</p>
         <img src={{$comic->thumb}} alt="">

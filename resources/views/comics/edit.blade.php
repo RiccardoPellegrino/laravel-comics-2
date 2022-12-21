@@ -53,6 +53,9 @@
             <button type="submit" class="btn btn-success">Submit</button>
             <button type="reset" class="btn btn-primary">Reset</button>
         </div>
+        <div class="mt-5">
+        <span><a href="{{ route('comics.index') }}" class="text-white text-uppercase text-decoration-none">back</a></span>
+        </div>
      </form>
 </section>
 @endsection
