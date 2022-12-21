@@ -1,11 +1,6 @@
 @extends('layouts.app')
 @section('content')
 <section class="container">
-    {{-- <ul>
-        @foreach ($comics as $comic)
-          <li><a href="{{route('comics.show', $comic->id)}}">{{$comic->title}}</a></li>
-        @endforeach
-    </ul> --}}
     <a href="{{route('comics.create')}}">Create comic</a>
     <div class="pt-5">
       <div class="mio_container">
@@ -16,19 +11,22 @@
           <div class="card-body">
             <a href="{{route('comics.show', $comic->id)}}">{{$comic->series}}</a>
           </div>
-          <a href="{{route('comics.show', $comic->id)}}" class="btn btn-primary">Scopri!</a>
-          <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-primary ms-3">Modifica</a>
+            <div class="d-flex flex-column justify-content-center align-items-center" id="modifiche">
+          <a href="{{route('comics.show', $comic->id)}}" class="btn btn-secondary">Scopri!</a>
+          <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-success">Modifica</a>
+            
           <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
             @csrf
             @method('DELETE')
-            <button type="submit" class="btn btn-danger ms-3">Cancella</button>
+            <button type="submit" class="btn btn-danger ">Cancella</button>
+          </div>
          </form>
         </div>
         @endforeach
       </div>
       </div>
       <div class="d-flex justify-content-center pb-3">
-      <button class="btn btn-primary">LOAD MORE</button>
+      <button class="btn btn-primary mt-5">LOAD MORE</button>
       </div>
       
   </section>
