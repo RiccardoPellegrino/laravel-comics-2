@@ -30,7 +30,7 @@ main {
 }
 
 .card{
-    // border: none;
+    
     width: calc((100% - 60px) / 6);
     margin: 5px;
    img{
@@ -38,8 +38,13 @@ main {
    }
 }
 .card-body{
+
     background-color: rgba(28, 28, 28);
     text-align: center;
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
 .mio_container{
     display: flex;

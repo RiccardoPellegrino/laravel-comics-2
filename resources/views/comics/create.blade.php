@@ -31,7 +31,7 @@
 
         <div class="d-flex flex-column align-items-center mb-2">
             <label for="sale_date">Data di uscita</label>
-            <input type="text" name="sale_date" id="sale_date" placeholder="aaaa-mm-gg" class="w-25 p-1">
+            <input type="date" name="sale_date" id="sale_date" placeholder="aaaa-mm-gg" class="w-25 p-1">
         </div>
 
         <div class="d-flex flex-column align-items-center mb-2">
