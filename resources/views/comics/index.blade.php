@@ -20,31 +20,12 @@
                             <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-secondary">Dettagli</a>
                             <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-success ms-2">Modifica</a>
                         </div>
-
-
                         <div class="bg-dark">
                             <button type="submit" class="btn btn-danger w-100 myBtn">Cancella</button>
                         </div>
-
-
-                        {{-- <div class="modal myModal">
+                        <div class="modal myModal">
                             <div class="modal-content">
-                                <span class="close my-close">chiuditi</span>
-                                <h4 class="text-center mb-4">Sei sicuro di voler cancellare questo Comic?</h4>
-                                <form action="{{route('comics.destroy', $comic->id)}}" method="POST" class="text-center">
-                                    @csrf
-                                    @method('DELETE')
-                                    <div>
-                                    <button type="submit" class="my-btn me-4">Si</button>
-                                    <span class="my-btn no" id="btn-close">No</span>
-                                    </div>
-                                </form>
-                            </div>
-                        </div> --}}
-                        <div id="" class="modal myModal">
-                            <!-- Modal content -->
-                            <div class="modal-content">
-                                <span class="close btn btn-secondary">CHIUDITI</span>
+                                <span class="close btn btn-secondary">CHIUDI</span>
                                 <br>
                                 <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
                                     @csrf
